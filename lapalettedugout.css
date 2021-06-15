@@ -1,0 +1,136 @@
+body {
+	overflow-x: hidden;
+	max-width: 100%;
+	margin: 0;
+}
+h3,p,h5 {
+	margin: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	
+}
+header {
+	padding: 1.4em 0 0.4em 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px -6px rgb(89 89 89 / 64%);
+}
+.fleche {
+	position: absolute;
+	left: 1.5em;
+    top: 1.6em;
+}
+.logo {
+	align-items : center ;
+	width : 200px;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	background-color: #353535;
+	color: white;
+}
+.iconheart,
+.restofooter {
+	display: inline-flex;
+}
+.lapalette {
+	display: flex;
+	margin-bottom: 10px;
+	width: 40%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #f6f6f6;
+	opacity: 0.8;
+}
+.container {
+	background-image: url(images/restaurants/lapalettedugout.jpg);
+	background-size: cover;
+    background-position: center center;
+    align-items: center;
+    position: relative;
+	width: 100%;
+	height: 80vw;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+}
+.heartresto {
+  	display: inline-block;
+  	font-style: normal;
+  	position: relative;
+  	font-size: 1.5em;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+  	margin-top: 20px;
+  	margin-right: 20px;
+
+}
+.heartresto:hover {
+	background: linear-gradient(#FF79DA, #9356DC);
+}
+.restopart {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.entreepalette,
+.platpalette,
+.dessertpalette {
+	border: 1px solid;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	width: 100%;
+	height: 4vw;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	margin: 10px 0 25px 0;
+	display: flex;
+	align-items: space-between;
+}
+.entrees,
+.plats,
+.desserts {
+	width: 80%;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: space-between;
+	display: flex;
+}
+p {
+	display: inline-block;
+}
+h2 {
+	text-align: center;
+}
+.line {
+	width: 20%;
+    display: block;
+    margin: 0 auto 1em auto;
+    background-color: #99E2D0;
+    height: 3px;
+}
+.price {
+    font-weight: bold;
+    justify-content: flex-end;
+    display: flex;
+}
+.searchbutton {
+	height: 45px;
+	border-radius: 20px;
+	font-size: 1.5em;
+	width: 220px;
+	color: white;
+	font-size: 1em;
+	margin: 0;
+	background: linear-gradient(#FF79DA, #9356DC);
+	margin-top: 20px;
+}

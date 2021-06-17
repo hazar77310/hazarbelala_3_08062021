@@ -191,7 +191,7 @@ h2 {
 .platdelice:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }
 
@@ -209,6 +209,6 @@ h2 {
 .dessertdelice:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }

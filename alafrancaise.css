@@ -171,7 +171,7 @@ h2 {
 	width: 19%;
 	height: 4vw;
 	margin-left: 10px;
-	transition: transform 400ms ease-in-out;
+	transition: transform 300ms ease-in-out;
 
 }
 .entreefrancaise:hover .rotate i {
@@ -196,7 +196,7 @@ h2 {
 .platfrancaise:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }
 
@@ -214,6 +214,6 @@ h2 {
 .dessertfrancaise:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }

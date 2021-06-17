@@ -192,8 +192,8 @@ h2 {
 .platlanote:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
-    transition: 400ms 100ms ease-in-out;
+    transform: rotate(360deg);
+    transition: 400ms 600ms ease-in-out;
 }
 
 .dessertlanote:hover .rotate {
@@ -210,6 +210,6 @@ h2 {
 .dessertlanote:hover .rotate i {
 	right: 0;
     color: white;
-    transform: rotate(-90deg);
+    transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }

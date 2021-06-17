@@ -131,3 +131,84 @@ h2 {
 	background: linear-gradient(#FF79DA, #9356DC);
 	margin-top: 20px;
 }
+.text {
+	margin: 0;
+    padding: 0.5em 0 1em 0.7em;
+    overflow: hidden;
+    width: 100%;
+    flex-wrap: nowrap;
+    font-size: 14px;
+}
+.rotate {
+	right: -30px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	color: transparent;
+}
+.rotate i{
+	right: 0p;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	color: transparent;
+}
+
+
+.entreedelice:hover .rotate {
+	right: 0;
+	color: white;
+	background-color: #99E2D0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 19%;
+	height: 4vw;
+	margin-left: 10px;
+	transition: transform 400ms ease-in-out;
+
+}
+.entreedelice:hover .rotate i {
+	right: 0;
+    color: white;
+    transform: rotate(360deg);
+    transition: 400ms 600ms ease-in-out;
+
+}
+
+.platdelice:hover .rotate {
+	right: 0;
+	color: white;
+	background-color: #99E2D0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 19%;
+	height: 4vw;
+	margin-left: 10px;
+	transition: transform 400ms ease-in-out;
+}
+.platdelice:hover .rotate i {
+	right: 0;
+    color: white;
+    transform: rotate(-90deg);
+    transition: 400ms 100ms ease-in-out;
+}
+
+.dessertdelice:hover .rotate {
+	right: 0;
+	color: white;
+	background-color: #99E2D0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 19%;
+	height: 4vw;
+	margin-left: 10px;
+	transition: transform 400ms ease-in-out;
+}
+.dessertdelice:hover .rotate i {
+	right: 0;
+    color: white;
+    transform: rotate(-90deg);
+    transition: 400ms 100ms ease-in-out;
+}

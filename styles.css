@@ -1,5 +1,5 @@
 body {
-	overflow-x: hidden;
+	overflow: hidden;
 	max-width: 100%;
 	margin: 0;
 }
@@ -14,6 +14,11 @@ a {
 .logo {
 	align-items : center ;
 	width : 200px;
+}
+.logofooter {
+	align-items: center;
+	width: 150px;
+	color: white;
 }
 header {
 	text-align: center;
@@ -53,7 +58,7 @@ header {
 }
 .icontextfilters {
   font-weight: bold;
-  margin-right: 1.5vmax;
+  margin-bottom: 1.5vmax;
   border-top: solid #e0e0e0 2px;
   border-right: solid #e0e0e0 2px;
   border-bottom: solid #e0e0e0 2px;
@@ -61,37 +66,34 @@ header {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 60px;
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
+  width: 30%;
+  display: flex;
+  position: relative;
+  color: #7e7e7e;
+}
+h2 {
+	text-align: center;
 }
 
-.filterdescription {
-	display: inline-block;
-}
-.fonctionresto {
-	display: inline-block;
-}
 .number {
-	display: inline-block;
 	border: 1px solid;
 	border-radius: 50%;
-	padding-left: 7px;
-	padding-right: 7px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	align-items: center;
+	padding: 2px 7px 2px 7px;
 	background-color: #9356DC;
 	color: white;
-
+	left: -0.7em;
+  top: 1em;
+  position: absolute;
+  margin-right: 1em;
 }
-.category-head,
-.filters h2 {
-	display: flex;
-	justify-content: center;
+.fonctionresto {
+	display: inline-flex;
+	margin-right: 1em;
 }
 .category-head {
-	border-left: none;
+	align-items: center;
+  flex-direction: column;
+  display: flex;
 }
 footer {
 	display: flex;
@@ -101,10 +103,12 @@ footer {
 	padding-top: 20px;
 	background-color: #353535;
 	color: white;
+	padding-left: 20px;
 }
-.heartresto,
+.iconresto,
 .restofooter {
 	display: inline-flex;
+	margin: 0;
 }
 .container {
 	color: #000000;
@@ -128,11 +132,11 @@ footer {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	width: 33vw;
+	width: 32%;
 	padding: 5px;
-	height: 17vw;
+	height: 35%;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
-	margin: 10px 0 25px 0;
+	margin: 10px 25px 25px 0;
 }
 .fonctionresto i {
 	color: #7e7e7e;
@@ -147,7 +151,6 @@ footer {
 
 }
 .heartresto {
-	display: inline-block;
   font-style: normal;
   position: relative;
   font-size: 1.5em;
@@ -156,12 +159,24 @@ footer {
   top: 0;
   bottom: 0;
 }
-.heartresto:hover {
+.heartresto i:hover {
 	background: linear-gradient(#FF79DA, #9356DC);
+	overflow: hidden;
 }
 .restopart {
 	display: flex;
 	justify-content: space-between;
 	padding-right: 15px;
 	padding-top: 5px;
+}
+.proposer,
+.partenaire,
+.mentions,
+.contact,
+h5,
+.iconresto i {
+	margin: 0;
+}
+.contact {
+	padding-bottom: 20px;
 }

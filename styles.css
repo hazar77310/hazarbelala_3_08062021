@@ -25,10 +25,12 @@ a {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1
+  z-index: 1;
   pointer-events: none;
   animation-fill-mode:backwards;
   animation-iteration-count: 1;
+  animation-duration: 5000ms;
+  display: flex;
 }
 
 @-webkit-keyframes spin {
@@ -41,6 +43,23 @@ a {
   100% { transform: rotate(360deg); }
   from { opacity:1; }
   to { opacity:0; }
+}
+header,
+section,
+footer,
+.search,
+.container {
+	animation-name: spin-anim;
+	animation-delay: 10s;
+}
+@-webkit-keyframes spin-anim {
+  from { opacity: 0; }
+  to { opacity:1; }
+}
+
+@keyframes spin-anim {
+  from { opacity:0; }
+  to { opacity:1; }
 }
 .logo {
 	align-items : center ;

@@ -24,6 +24,11 @@ header {
 .logo {
 	width : 200px;
 }
+.logofooter {
+	align-items: center;
+	width: 150px;
+	filter: invert(100%);
+}
 footer {
 	display: flex;
 	flex-direction: column;
@@ -32,6 +37,7 @@ footer {
 	padding-top: 20px;
 	background-color: #353535;
 	color: white;
+	padding-bottom: 20px;
 }
 .iconheart,
 .restofooter {
@@ -64,21 +70,36 @@ footer {
   	display: inline-block;
   	font-style: normal;
   	position: relative;
-  	font-size: 1.5em;
-  	left: 0;
-  	right: 0;
-  	top: 0;
-  	bottom: 0;
   	margin-top: 20px;
   	margin-right: 20px;
-
 }
-.heartresto:hover {
-	background: linear-gradient(#FF79DA, #9356DC);
+.iconresto {
+  	display: inline-block;
+  	font-style: normal;
+  	position: relative;
+  	font-size: 1em;
+}
+.iconresto .fas {
+	position: relative;
+}
+.heartresto .fas {
+	opacity: 0;
+}
+.heartresto .fas:hover  {
+ 	background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   display: initial;
+   opacity: 1;
+}
+.heartresto .fas,
+.heartresto .far {
+	position: absolute;
+	font-size: 1.5em;
 }
 .restopart {
 	display: flex;
-	width: 100%;
+	width: 50%;
 	justify-content: space-between;
 }
 .entreedelice,
@@ -91,16 +112,42 @@ footer {
 	width: 100%;
 	height: 4vw;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
-	margin: 10px 0 25px 0;
+	margin: 10px 0 10px 0;
 	display: flex;
 }
 .entrees,
 .plats,
 .desserts {
-	width: 80%;
+	width: 50%;
 	flex-direction: column;
 	justify-content: space-between;
 	display: flex;
+}
+.entrees {
+	animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari et Chrome */
+  -o-animation: fadein 5s; /* Opera */
+}
+.plats {
+	animation: fadein 8s;
+  -moz-animation: fadein 8s; /* Firefox */
+  -webkit-animation: fadein 8s; /* Safari et Chrome */
+  -o-animation: fadein 8s; /* Opera */
+}
+.desserts {
+	animation: fadein 11s;
+  -moz-animation: fadein 11s; /* Firefox */
+  -webkit-animation: fadein 11s; /* Safari et Chrome */
+  -o-animation: fadein 11s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 p {
 	display: inline-block;
@@ -119,6 +166,8 @@ h2 {
     font-weight: bold;
     justify-content: flex-end;
     display: flex;
+    margin: 0;
+    padding-top: 25px;
 }
 .searchbutton {
 	height: 45px;
@@ -173,7 +222,7 @@ h2 {
 	right: 0;
     color: white;
     transform: rotate(360deg);
-    transition: 400ms 600ms ease-in-out;
+    transition: 400ms 100ms ease-in-out;
 
 }
 

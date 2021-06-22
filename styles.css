@@ -11,6 +11,37 @@ a {
 	text-decoration: none;
 	
 }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear ;
+  animation: spin 2s linear ;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1
+  pointer-events: none;
+  animation-fill-mode:backwards;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  from { opacity:1; }
+  to { opacity:0; }
+}
 .logo {
 	align-items : center ;
 	width : 200px;
@@ -115,17 +146,32 @@ footer {
   	display: inline-block;
   	font-style: normal;
   	position: relative;
-  	font-size: 1.5em;
-  	margin-right: 10px;
+  	margin-right: 20px;
 }
-.heartresto:hover {
-	color: linear-gradient(#FF79DA, #9356DC);
+.iconresto .fas {
+	position: relative;
 }
+.heartresto .fas {
+	opacity: 0;
+}
+.heartresto .fas:hover  {
+ 	background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   display: initial;
+   opacity: 1;
+}
+.heartresto .fas,
+.heartresto .far {
+	position: absolute;
+	font-size: 1.5em;
+}
+
 .iconresto {
-  	display: inline-block;
-  	font-style: normal;
-  	position: relative;
-  	font-size: 1em;
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+  font-size: 1em;
 }
 .container {
 	color: #000000;

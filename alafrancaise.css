@@ -115,53 +115,35 @@ footer {
 	margin: 10px 0 10px 0;
 	display: flex;
 	align-items: space-between;
-	animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari et Chrome */
-  -o-animation: fadein 5s; /* Opera */
 }
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
+
 .entrees,
 .plats,
 .desserts {
 	width: 50%;
 	flex-direction: column;
-	align-items: space-between;
 	justify-content: space-between;
 	display: flex;
+	transform: translateY(0);
 }
 .entrees {
-	animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari et Chrome */
-  -o-animation: fadein 5s; /* Opera */
+	animation: deplacement 700ms both ease-in-out;
 }
 .plats {
-	animation: fadein 8s;
-  -moz-animation: fadein 8s; /* Firefox */
-  -webkit-animation: fadein 8s; /* Safari et Chrome */
-  -o-animation: fadein 8s; /* Opera */
+	animation: deplacement 700ms 400ms both ease-in-out;
 }
 .desserts {
-	animation: fadein 11s;
-  -moz-animation: fadein 11s; /* Firefox */
-  -webkit-animation: fadein 11s; /* Safari et Chrome */
-  -o-animation: fadein 11s; /* Opera */
+	animation: deplacement 700ms 800ms both ease-in-out;
 }
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@keyframes deplacement {
+	0% {
+    	opacity: 0;
+    	transform: translateY(10px);
+	}
+	100% {
+    	opacity: 1;
+    	transform: translateY(0);
+	}
 }
 p {
 	display: inline-block;

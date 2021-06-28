@@ -223,8 +223,8 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
+	width: 22%;
+	height: 100%;
 	margin-left: 10px;
 	transition: transform 400ms ease-in-out;
 
@@ -243,8 +243,8 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
+	width: 22%;
+	height: 100%;
 	margin-left: 10px;
 	transition: transform 400ms ease-in-out;
 }
@@ -261,8 +261,8 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
+	width: 22%;
+	height: 100%;
 	margin-left: 10px;
 	transition: transform 400ms ease-in-out;
 }

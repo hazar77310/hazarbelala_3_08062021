@@ -31,7 +31,7 @@ header {
 	filter: invert(100%);
 }
 .images {
-	height: 30vw;
+	height: 70vw;
 }
 .imgmenu {
 	object-fit: cover;
@@ -51,23 +51,26 @@ footer {
 	display: inline-flex;
 }
 .francaise {
+	background-color: #f6f6f6;
 	display: flex;
 	margin-bottom: 10px;
-	width: 95%;
+	width: 100%;
 	height: auto;
 	flex-direction: column;
-	background-color: #f6f6f6;
-	opacity: 0.8;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid #f6f6f6;
+	border-top-right-radius: 20px ;
+	border-top-left-radius: 20px ;
+	margin-top: -50px;
 }
 .container {
-	background-color: #f6f6f6;
 	background-size: cover;
   background-position: center center;
   align-items: center;
   position: relative;
 	height: 100%;
+	width: 100%;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
@@ -80,7 +83,8 @@ footer {
   	margin-right: 20px;
 }
 .alafrancaise {
-	display: inline-flex;
+	display: flex;
+	width: 100%;
 }
 .iconresto .fas {
 	position: relative;
@@ -107,7 +111,8 @@ footer {
   	font-size: 1em;
 }
 .restopart {
-	display: inline-flex;
+	display: flex;
+	width: 86.5%;
 }
 .entreefrancaise,
 .platfrancaise,
@@ -152,6 +157,9 @@ footer {
     	transform: translateY(0);
 	}
 }
+.desserts {
+	margin-bottom: 20px;
+}
 p {
 	display: inline-block;
 }
@@ -179,6 +187,9 @@ h2 {
 	color: white;
 	margin: 0;
 	background: linear-gradient(#FF79DA, #9356DC);
+}
+.searchbutton:hover {
+	opacity: 0.9;
 }
 .text {
 	margin: 0;
@@ -263,4 +274,33 @@ h2 {
     transition: 400ms 100ms ease-in-out;
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) {
+	.images {
+		height: 40vw;
+	}
+	.restopart,
+	.entrees,
+	.plats,
+	.desserts {
+		width: 50%;
+	}
+	.francaise {
+		width: 60%;
+	}
+
+}
+@media screen and (min-width: 1200px) {
+	.images {
+		height: 30vw;
+	}
+	.restopart,
+	.entrees,
+	.plats,
+	.desserts {
+		width: 40%;
+	}
+	.francaise {
+		width: 50%;
+	}
+
+}

@@ -166,11 +166,11 @@ h2 {
 	font-size: 1em;
 }
 .line {
-	width: 70px;
-    display: block;
-    margin: 0;
-    background-color: #99E2D0;
-    height: 3px;
+	width: 42px;
+  margin: 0 ;
+  background-color: #99E2D0;
+  height: 3px;
+  margin-top: -10px;
 }
 .price {
     font-weight: bold;

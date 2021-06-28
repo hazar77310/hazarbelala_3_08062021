@@ -41,7 +41,6 @@ header {
 footer {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	height: auto;
 	background-color: #353535;
 	color: white;
@@ -54,7 +53,7 @@ footer {
 .lanote {
 	display: flex;
 	margin-bottom: 10px;
-	width: 100%;
+	width: auto;
 	height: auto;
 	flex-direction: column;
 	align-items: center;
@@ -71,7 +70,7 @@ footer {
   align-items: center;
   position: relative;
 	height: 100%;
-	width: 100%;
+	width: auto;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
@@ -109,7 +108,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 86.5%;
+	width: 90%;
 }
 .lanoteenchantee {
 	display: flex;
@@ -131,7 +130,7 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 86.5%;
+	width: 90%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;

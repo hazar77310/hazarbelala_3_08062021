@@ -40,7 +40,6 @@ header {
 footer {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	height: auto;
 	padding: 20px 0 20px 20px;
 	background-color: #353535;
@@ -54,8 +53,8 @@ footer {
 	background-color: #f6f6f6;
 	display: flex;
 	margin-bottom: 10px;
-	width: 100%;
 	height: auto;
+	width: 100%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -65,12 +64,8 @@ footer {
 	margin-top: -50px;
 }
 .container {
-	background-size: cover;
-  background-position: center center;
   align-items: center;
-  position: relative;
 	height: 100%;
-	width: 100%;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;

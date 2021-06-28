@@ -69,8 +69,8 @@ footer {
   background-position: center center;
   align-items: center;
   position: relative;
+  width: auto;
 	height: 100%;
-	width: 100%;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;

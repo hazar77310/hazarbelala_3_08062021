@@ -282,7 +282,7 @@ h2 {
 	.entrees,
 	.plats,
 	.desserts {
-		width: 50%;
+		width: 65%;
 	}
 	.francaise {
 		width: 60%;
@@ -298,9 +298,6 @@ h2 {
 	.plats,
 	.desserts {
 		width: 40%;
-	}
-	.francaise {
-		width: 50%;
 	}
 
 }

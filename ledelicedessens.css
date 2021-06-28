@@ -66,6 +66,7 @@ footer {
 .container {
   align-items: center;
 	height: 100%;
+	width: auto;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;

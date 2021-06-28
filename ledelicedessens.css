@@ -54,22 +54,25 @@ footer {
 	display: flex;
 	margin-bottom: 10px;
 	height: auto;
-	width: 100%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
-	border-top-right-radius: 20px ;
-	border-top-left-radius: 20px ;
-	margin-top: -50px;
 }
 .container {
+	background-size: cover;
+  background-position: center center;
   align-items: center;
+  position: relative;
 	height: 100%;
 	width: auto;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
+	margin-top: -50px;
+	border-top-right-radius: 20px ;
+	border-top-left-radius: 20px ;
+	background-color: #f6f6f6;
 }
 .heartresto {
   	display: inline-block;
@@ -280,7 +283,19 @@ h2 {
 		width: 65%;
 	}
 	.ledelice {
-		width: 60%;
+		width: 40%;
+		background-color: white;
+		border: 1px solid #f6f6f6;margin-top: -50px;
+		border-top-right-radius: 20px ;
+		border-top-left-radius: 20px ;
+		background-color: #f6f6f6;
+	}
+	.container {
+		margin-top: 0;
+		border-top-right: 1px;
+		border-top-left: 1px ;
+		background-color: white;
+		border-color: white;
 	}
 
 }
@@ -292,7 +307,7 @@ h2 {
 	.entrees,
 	.plats,
 	.desserts {
-		width: 40%;
+		width: 50%;
 	}
 
 }

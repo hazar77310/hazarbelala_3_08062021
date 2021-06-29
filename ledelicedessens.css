@@ -42,6 +42,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	height: auto;
+	width: auto;
 	padding: 20px 0 20px 20px;
 	background-color: #353535;
 	color: white;
@@ -59,6 +60,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
+	margin-top: 0;
 }
 .container {
 	background-size: cover;
@@ -109,7 +111,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 86.5%;
+	width: 90%;
 }
 .ledelicedessens {
 	display: flex;
@@ -132,7 +134,7 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 86.5%;
+	width: 90%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;
@@ -289,10 +291,10 @@ h2 {
 	.entrees,
 	.plats,
 	.desserts {
-		width: 65%;
+		width: 90%;
 	}
 	.ledelice {
-		width: 40%;
+		width: 50%;
 		background-color: white;
 		border: 1px solid #f6f6f6;margin-top: -50px;
 		border-top-right-radius: 20px ;
@@ -312,11 +314,8 @@ h2 {
 	.images {
 		height: 30vw;
 	}
-	.restopart,
-	.entrees,
-	.plats,
-	.desserts {
-		width: 50%;
+	.ledelice {
+		width: 40%;
 	}
 
 }

@@ -292,10 +292,10 @@ h2 {
 	.entrees,
 	.plats,
 	.desserts {
-		width: 65%;
+		width: 90%;
 	}
 	.francaise {
-		width: 40%;
+		width: 50%;
 		background-color: white;
 		border: 1px solid #f6f6f6;margin-top: -50px;
 		border-top-right-radius: 20px ;
@@ -308,18 +308,14 @@ h2 {
 		border-top-left: 1px ;
 		background-color: white;
 		border-color: white;
-}
+	}
 
 }
 @media screen and (min-width: 1200px) {
 	.images {
 		height: 30vw;
 	}
-	.restopart,
-	.entrees,
-	.plats,
-	.desserts {
-		width: 50%;
+	.francaise {
+		width: 40%;
 	}
-
 }

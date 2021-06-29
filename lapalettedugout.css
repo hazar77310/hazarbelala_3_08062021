@@ -285,10 +285,10 @@ h2 {
 	.entrees,
 	.plats,
 	.desserts {
-		width: 65%;
+		width: 90%;
 	}
 	.lapalette {
-		width: 40%;
+		width: 50%;
 		background-color: white;
 		border: 1px solid #f6f6f6;margin-top: -50px;
 		border-top-right-radius: 20px ;
@@ -307,11 +307,8 @@ h2 {
 	.images {
 		height: 30vw;
 	}
-	.restopart,
-	.entrees,
-	.plats,
-	.desserts {
-		width: 50%;
+	.lapalette {
+		width: 40%;
 	}
 
 }

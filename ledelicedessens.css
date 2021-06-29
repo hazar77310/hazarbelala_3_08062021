@@ -2,6 +2,7 @@ body {
 	overflow-x: hidden;
 	max-width: 100%;
 	margin: 0;
+	scroll
 }
 h3,p,h5 {
 	margin: 0;
@@ -140,6 +141,7 @@ footer {
 	justify-content: space-between;
 	display: flex;
 	transform: translateY(0);
+	margin-bottom: 30px;
 }
 .entrees {
 	animation: deplacement 700ms both ease-in-out;
@@ -159,9 +161,6 @@ footer {
     	opacity: 1;
     	transform: translateY(0);
 	}
-}
-.desserts {
-	margin-bottom: 20px;
 }
 p {
 	display: inline-block;
@@ -189,7 +188,7 @@ h2 {
 	font-size: 1em;
 	width: 220px;
 	color: white;
-	margin: 0;
+	margin-bottom: 50px;
 	background: linear-gradient(#FF79DA, #9356DC);
 }
 .searchbutton:hover {

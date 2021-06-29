@@ -60,6 +60,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
+	width: auto;
 }
 .container {
 	background-size: cover;
@@ -114,7 +115,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 86.5%;
+	width: 100%;
 }
 .entreefrancaise,
 .platfrancaise,
@@ -133,12 +134,13 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 86.5%;
+	width: 100%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;
 	display: flex;
 	transform: translateY(0);
+	margin-bottom: 30px;
 }
 .entrees {
 	animation: deplacement 700ms both ease-in-out;
@@ -159,9 +161,6 @@ footer {
     	transform: translateY(0);
 	}
 }
-.desserts {
-	margin-bottom: 20px;
-}
 p {
 	display: inline-block;
 }
@@ -179,16 +178,15 @@ h2 {
     font-weight: bold;
     justify-content: flex-end;
     display: flex;
-    margin: 0;
     padding-top: 25px;
-}
+ }
 .searchbutton {
 	height: 45px;
 	border-radius: 20px;
 	font-size: 1em;
 	width: 220px;
 	color: white;
-	margin: 0;
+	margin-bottom: 50px;
 	background: linear-gradient(#FF79DA, #9356DC);
 }
 .searchbutton:hover {
@@ -196,11 +194,9 @@ h2 {
 }
 .text {
 	margin: 0;
-    padding: 0.5em 0 1em 0.7em;
-    overflow: hidden;
-    width: 100%;
-    flex-wrap: nowrap;
-    font-size: 14px;
+  padding: 0.5em 0 1em 0.7em;
+  width: 100%;
+  font-size: 14px;
 }
 .rotate {
 	right: -30px;

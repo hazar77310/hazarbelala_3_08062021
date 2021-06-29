@@ -138,6 +138,7 @@ footer {
 	justify-content: space-between;
 	display: flex;
 	transform: translateY(0);
+	margin-bottom: 30px;
 }
 .entrees {
 	animation: deplacement 700ms both ease-in-out;
@@ -184,7 +185,7 @@ h2 {
 	font-size: 1em;
 	width: 220px;
 	color: white;
-	margin: 0;
+	margin-bottom: 50px;
 	background: linear-gradient(#FF79DA, #9356DC);
 }
 .searchbutton:hover {

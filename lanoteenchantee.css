@@ -60,6 +60,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
+	width: 100%;
 }
 .container {
 	background-size: cover;
@@ -110,7 +111,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 90%;
+	width: 85%;
 }
 .lanoteenchantee {
 	display: flex;
@@ -132,12 +133,13 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 90%;
+	width: 85%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;
 	display: flex;
 	transform: translateY(0);
+	margin-bottom: 30px;
 }
 .entrees {
 	animation: deplacement 700ms both ease-in-out;
@@ -189,6 +191,7 @@ h2 {
 	color: white;
 	margin: 0;
 	background: linear-gradient(#FF79DA, #9356DC);
+	margin-bottom: 50px;
 }
 .searchbutton:hover {
 	opacity: 0.9;

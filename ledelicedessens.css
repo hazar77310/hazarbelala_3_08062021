@@ -28,6 +28,7 @@ header {
 	align-items: center;
 	width: 150px;
 	filter: invert(100%);
+	margin-bottom: 15px;
 }
 .images {
 	height: 70vw;
@@ -86,6 +87,7 @@ footer {
   	font-style: normal;
   	position: relative;
   	font-size: 1em;
+  	margin-right: 5px;
 }
 .iconresto .fas {
 	position: relative;
@@ -271,6 +273,12 @@ h2 {
     color: white;
     transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
+}
+.proposer,
+.contact,
+.partenaire,
+.mentions {
+	margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {

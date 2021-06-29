@@ -69,6 +69,7 @@ a {
 	align-items: center;
 	width: 150px;
 	filter: invert(100%);
+	margin-bottom: 15px;
 }
 header {
 	text-align: center;
@@ -119,6 +120,10 @@ header {
   display: flex;
   position: relative;
   color: #7e7e7e;
+}
+
+.icontextfilters:hover {
+
 }
 h2 {
 	text-align: center;
@@ -244,16 +249,15 @@ footer {
 	padding-top: 5px;
 }
 .proposer,
-.partenaire,
-.mentions,
 .contact,
-h5,
-.iconresto i {
-	margin: 0;
+.partenaire,
+.mentions {
+	margin-bottom: 10px;
 }
-.contact {
-	padding-bottom: 20px;
+.iconresto {
+	margin-right: 5px;
 }
+
 
 @media screen and (min-width: 768px) {
 	.restosection {

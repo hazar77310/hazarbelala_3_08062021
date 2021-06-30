@@ -223,15 +223,37 @@ footer {
   -webkit-box-direction: normal;
   justify-content: center;
 }
-.imgresto,
-.imgnew {
+.newbox {
+	display: block;
+  position: relative;
+  margin: auto;
+  height: 190px;
+}
+.new {
+  background-color: #71d7be;
+  color: #278870;
+  position: relative;
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+  z-index: 1;
+  top: -180px;
+  left: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+.imgresto {
 	width: 100%;
 	object-fit: cover;
 	padding-bottom: 0;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	height: 190px;
-	display: flex;
+	margin: 0;
+	display: inline-block;
 }
 .boxresto {
 	border: 1px solid;
@@ -241,22 +263,13 @@ footer {
 	padding: 5px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin-bottom: 20px;
-	display: flex;
 	height: 280px;
 	width: 98%;
 }
-.imgnew::after {
-    content: "Nouveau";
-    background-color: #71d7be;
-    color: #278870;
-    position: relative;
-    height: 15px;
-    width: 60px;
-    top: 10px;
-    left: -10px;
-    padding: 5px 10px 10px 10px;
-    border-radius: 3px;
+.textresto {
+	margin: 0;
 }
+
 .fonctionresto i {
 	color: #7e7e7e;
 }
@@ -266,6 +279,7 @@ footer {
 	justify-content: space-between;
 	padding-right: 15px;
 	padding-top: 5px;
+	margin: ;
 }
 .proposer,
 .contact,

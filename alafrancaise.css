@@ -16,6 +16,12 @@ h3,p,h5,h2 {
 h3,p,h5 {
 	margin: 0;
 }
+h3,p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
+}
 
 a {
 	color: inherit;
@@ -71,7 +77,9 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
-	width: auto;
+	width: 98%;
+	margin-top: 10px;
+	position: relative;
 }
 .container {
 	background-size: cover;
@@ -79,7 +87,6 @@ footer {
   align-items: center;
   position: relative;
 	height: 100%;
-	width: auto;
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
@@ -126,7 +133,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 100%;
+	width: 82%;
 }
 .entreefrancaise,
 .platfrancaise,
@@ -145,13 +152,12 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 100%;
-	height: auto;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	display: flex;
 	transform: translateY(0);
 	margin-bottom: 30px;
+	width: 82%;
 }
 .entrees {
 	animation: deplacement 700ms both ease-in-out;
@@ -189,7 +195,8 @@ h2 {
     font-weight: bold;
     justify-content: flex-end;
     display: flex;
-    padding-top: 25px;
+    padding-top: 30px;
+    font-family : 'Roboto', sans-serif ;
  }
 .searchbutton {
 	height: 45px;
@@ -206,8 +213,9 @@ h2 {
 .text {
 	margin: 0;
   padding: 0.5em 0 1em 0.7em;
-  width: 100%;
+  width: 80%;
   font-size: 14px;
+
 }
 .rotate {
 	right: -30px;

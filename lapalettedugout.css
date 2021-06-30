@@ -15,6 +15,12 @@ h3,p,h5,h2 {
 h3,p,h5 {
 	margin: 0;
 }
+h3,p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -69,6 +75,9 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
+	width: 98%;
+	position: relative;
+	margin-top: 10px;
 }
 .container {
 	background-size: cover;
@@ -123,7 +132,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 90%;
+	width: 82%;
 }
 .entreepalette,
 .platpalette,
@@ -141,7 +150,7 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 90%;
+	width: 82%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;
@@ -187,6 +196,7 @@ h2 {
     display: flex;
     margin: 0;
     padding-top: 25px;
+    font-family : 'Roboto', sans-serif ;
 }
 .searchbutton {
 	height: 45px;

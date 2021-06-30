@@ -5,7 +5,6 @@ body {
 	overflow-x: hidden;
 	max-width: 100%;
 	margin: 0;
-	scroll
 }
 h1 {
 	font-family : 'Shrikhand', cursif ;
@@ -16,6 +15,12 @@ h3,p,h5,h2 {
 
 h3,p,h5 {
 	margin: 0;
+}
+h3,p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
 }
 a {
 	color: inherit;
@@ -72,6 +77,9 @@ footer {
 	align-items: center;
 	border: 1px solid #f6f6f6;
 	margin-top: 0;
+	position: relative;
+	width: 98%;
+	margin-top: 10px;
 }
 .container {
 	background-size: cover;
@@ -122,7 +130,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 90%;
+	width: 82%;
 }
 .ledelicedessens {
 	display: flex;
@@ -145,7 +153,7 @@ footer {
 .entrees,
 .plats,
 .desserts {
-	width: 90%;
+	width: 82%;
 	height: auto;
 	flex-direction: column;
 	justify-content: space-between;

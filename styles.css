@@ -305,13 +305,6 @@ footer {
     justify-content: center;
 
 	}
-	.boxresto {
-		width: 45vw;
-		height: 35vw;
-	}
-	.imgresto {
-		height: 75%;
-	}
 }
 @media screen and (min-width: 1200px) {
 	.boxresto {

@@ -28,19 +28,20 @@ a {
 	text-decoration: none;
 	
 }
+.logo {
+	align-items : center ;
+	width : 160px;
+}
 header {
-	padding: 1.4em 0 0.4em 0;
-  text-align: center;
-  box-shadow: 0px 4px 10px -6px rgb(89 89 89 / 64%);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 15px 0;
 }
 .fleche {
 	position: absolute;
 	left: 1.5em;
   top: 1.6em;
-}
-.logo {
-	align-items : center ;
-	width : 200px;
 }
 .logofooter {
 	align-items: center;
@@ -48,14 +49,7 @@ header {
 	filter: invert(100%);
 	margin-bottom: 15px;
 }
-.images {
-	height: 70vw;
-}
-.imgmenu {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-}
+
 footer {
 	display: flex;
 	flex-direction: column;
@@ -72,35 +66,26 @@ footer {
 	background-color: #f6f6f6;
 	display: flex;
 	margin-bottom: 10px;
-	height: auto;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #f6f6f6;
-	width: 98%;
-	margin-top: 10px;
-	position: relative;
-}
-.container {
-	background-size: cover;
-  background-position: center center;
-  align-items: center;
-  position: relative;
-	height: 100%;
-	justify-content: center;
-	flex-direction: column;
-	display: flex;
 	margin-top: -50px;
-	border-top-right-radius: 20px ;
-	border-top-left-radius: 20px ;
-	background-color: #f6f6f6;
+	border-top-right-radius: 30px ;
+	border-top-left-radius: 30px ;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  position: relative;
+  padding: 0 10px 0 10px;
 }
+
 .heartresto {
   	display: inline-block;
   	font-style: normal;
   	position: relative;
   	margin-top: 22px;
-  	margin-right: 20px;
+  	margin-right: 50px;
 }
 .titreresto {
 	display: flex;
@@ -134,7 +119,7 @@ footer {
 }
 .restopart {
 	display: flex;
-	width: 82%;
+	width: 100%;
 }
 .entreeresto,
 .platresto,
@@ -147,28 +132,37 @@ footer {
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin: 10px 0 10px 0;
 	display: flex;
-	align-items: space-between;
+	transform: translateY(0);
+}
+.entreeresto {
+	animation: deplacement 700ms both ease-in-out;
+}
+.platresto {
+	animation: deplacement 700ms 400ms both ease-in-out;
+}
+.dessertresto {
+	animation: deplacement 700ms 800ms both ease-in-out;
+}
+@keyframes deplacement {
+	0% {
+    	opacity: 0;
+    	transform: translateY(10px);
+	}
+	100% {
+    	opacity: 1;
+    	transform: translateY(0);
+	}
 }
 
 .entrees,
 .plats,
 .desserts {
 	flex-direction: column;
-	justify-content: center;
 	display: flex;
-	transform: translateY(0);
 	margin-bottom: 30px;
-	width: 82%;
+	width: 100%;
 }
-.entrees {
-	animation: deplacement 700ms both ease-in-out;
-}
-.plats {
-	animation: deplacement 700ms 400ms both ease-in-out;
-}
-.desserts {
-	animation: deplacement 700ms 800ms both ease-in-out;
-}
+
 @keyframes deplacement {
 	0% {
     	opacity: 0;
@@ -213,9 +207,7 @@ h2 {
 }
 .text {
 	margin: 0;
-  padding: 0.5em 0 1em 0.7em;
   width: 80%;
-  font-size: 14px;
 
 }
 .rotate {
@@ -310,28 +302,10 @@ h2 {
 	.desserts {
 		width: 90%;
 	}
-	.restaurant {
-		width: 50%;
-		background-color: white;
-		border: 1px solid #f6f6f6;margin-top: -50px;
-		border-top-right-radius: 20px ;
-		border-top-left-radius: 20px ;
-		background-color: #f6f6f6;
-}
-	.container {
-		margin-top: 0;
-		border-top-right: 1px;
-		border-top-left: 1px ;
-		background-color: white;
-		border-color: white;
-	}
 
 }
 @media screen and (min-width: 1200px) {
 	.images {
 		height: 30vw;
-	}
-	.restaurant {
-		width: 40%;
 	}
 }

@@ -208,7 +208,7 @@ h2 {
 }
 .text {
 	margin: 0;
-  width: 80%;
+  width: 100%;
 
 }
 .rotate {
@@ -220,29 +220,26 @@ h2 {
 	color: transparent;
 }
 .rotate i{
-	right: 0;
+	right: 0p;
 	display: flex;
 	position: relative;
 	justify-content: center;
 	align-items: center;
 	color: transparent;
 }
-
-
-
 .entreeresto:hover .rotate {
 	right: 0;
 	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 22%;
-	height: 100%;
+	width: 19%;
+	height: 4vw;
 	margin-left: 10px;
-	transition: transform 300ms ease-in-out;
+	transition: transform 400ms ease-in-out;
 
 }
-.entreeresto:hover .rotate i {
+.entreepalette:hover .rotate i {
 	right: 0;
     color: white;
     transform: rotate(360deg);
@@ -250,41 +247,42 @@ h2 {
 
 }
 
-.platresto:hover .rotate {
+.platpalette:hover .rotate {
 	right: 0;
 	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 22%;
-	height: 100%;
+	width: 19%;
+	height: 4vw;
 	margin-left: 10px;
 	transition: transform 400ms ease-in-out;
 }
-.platresto:hover .rotate i {
+.platpalette:hover .rotate i {
 	right: 0;
     color: white;
     transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }
 
-.dessertresto:hover .rotate {
+.dessertpalette:hover .rotate {
 	right: 0;
 	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 22%;
-	height: 100%;
+	width: 19%;
+	height: 4vw;
 	margin-left: 10px;
 	transition: transform 400ms ease-in-out;
 }
-.dessertresto:hover .rotate i {
+.dessertpalette:hover .rotate i {
 	right: 0;
     color: white;
     transform: rotate(360deg);
     transition: 400ms 100ms ease-in-out;
 }
+
 
 .proposer,
 .contact,

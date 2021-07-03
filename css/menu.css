@@ -20,7 +20,7 @@ h3,p {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 80%;
+	width: 75%;
 }
 
 a {
@@ -217,7 +217,7 @@ h2 {
 }
 .text {
 	margin: 0;
-  width: 80%;
+  width: 75%;
 
 }
 .rotate {

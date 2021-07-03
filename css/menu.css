@@ -20,7 +20,7 @@ h3,p {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 95%;
+	width: 80%;
 }
 
 a {
@@ -131,6 +131,7 @@ footer {
 	margin: 10px 0 10px 0;
 	display: flex;
 	transform: translateY(0);
+	width: 100%;
 }
 .entreeresto {
 	animation: deplacement 700ms both ease-in-out;
@@ -188,8 +189,11 @@ h2 {
     font-weight: bold;
     justify-content: flex-end;
     display: flex;
-    padding-top: 30px;
+    padding-top: 42px;
     font-family : 'Roboto', sans-serif ;
+    width: 20px;
+
+   	
  }
 .searchbutton {
 	height: 45px;
@@ -201,13 +205,19 @@ h2 {
 	background: linear-gradient(#FF79DA, #9356DC);
 	border: none;
 	display: flex;
+	justify-content: center;
 }
 .searchbutton:hover {
 	opacity: 0.9;
 }
+.container a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 .text {
 	margin: 0;
-  width: 100%;
+  width: 80%;
 
 }
 .rotate {
@@ -216,7 +226,7 @@ h2 {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: transparent;
 }
 .rotate i{
 	right: -10px;
@@ -224,63 +234,78 @@ h2 {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: transparent;
+	font-size: 30px;
 }
 .entreeresto:hover .rotate {
-	right: 0;
-	color: black;
+	right: -30px;
+	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
-	transition: transform 400ms both ease-in-out;
-
+	width: 100px;
+	height: 100%;
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
+  margin-left: 10px;
+  box-shadow: 3px 2px 2px 3px #99E2D0;
 }
 .entreeresto:hover .rotate i {
 	right: 0;
-    color: black;
-    transform: rotate(360deg);
-    transition: 400ms ease-in-out;
+  color: white;
+  transition: 1s ease-in-out;
+ 	transform: rotate(360deg);
 
 }
-
-.platpalette:hover .rotate {
-	right: 0;
+.platresto:hover .rotate {
+	right: -30px;
 	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
-	margin-left: 10px;
-	transition: transform 400ms ease-in-out;
+	width: 50px;
+	height: 100%;
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
+  margin-left: 10px;
+  box-shadow: 3px 2px 2px 3px #99E2D0;
+
+
 }
-.platpalette:hover .rotate i {
+.platresto:hover .rotate i {
 	right: 0;
-    color: white;
-    transform: rotate(360deg);
-    transition: 400ms 100ms ease-in-out;
+  color: white;
+  transition: 1s ease-in-out;
+ 	transform: rotate(360deg);
+
 }
 
-.dessertpalette:hover .rotate {
-	right: 0;
+.dessertresto:hover .rotate {
+	right: -30px;
 	color: white;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 19%;
-	height: 4vw;
-	margin-left: 10px;
-	transition: transform 400ms ease-in-out;
+	width: 100px;
+	height: 100%;
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
+  margin-left: 10px;
+  box-shadow: 3px 2px 2px 3px #99E2D0;
 }
-.dessertpalette:hover .rotate i {
+.dessertresto:hover .rotate i {
 	right: 0;
-    color: white;
-    transform: rotate(360deg);
-    transition: 400ms 100ms ease-in-out;
-}
+  color: white;
+  transition: 1s ease-in-out;
+ 	transform: rotate(360deg);
 
+}
+.restaurant h3 {
+	 padding: 15px 0 0 20px;
+}
+.restaurant p {
+	padding: 5px 0 10px 20px;
+}
 
 .proposer,
 .contact,
@@ -299,10 +324,11 @@ h2 {
 	.restaurant {
 		flex-direction: row;
 		column-count: 3;
-		justify-content: normal;
+		justify-content: center;
+		align-items: center;
 	}
 	.container {
-		justify-content: normal;
+		justify-content: center;
 	}
 	.entrees,
 	.plats,
@@ -315,4 +341,6 @@ h2 {
 	.searchbutton {
 		justify-content: center;
 	}
+
+
 }

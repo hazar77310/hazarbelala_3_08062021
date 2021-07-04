@@ -126,44 +126,61 @@ footer {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	height: 80px;
+	height: auto;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin: 10px 0 10px 0;
 	display: flex;
-	transform: translateY(0);
 	width: 100%;
 	position: relative;
 }
-.entreeresto {
-	animation: deplacement 500ms both ease-in-out;
-}
-.platresto {
-	animation: deplacement 1800ms both ease-in-out;
-}
-.dessertresto {
-	animation: deplacement 11000ms both ease-in-out;
-}
-@keyframes deplacement {
-	0% {
-    	opacity: 0;
-    	transform: translateY(10px);
-	}
-	100% {
-    	opacity: 1;
-    	transform: translateY(0);
-	}
-}
-.entreeresto:nth-child(1) {animation-delay: 0.0s; }
-.entreeresto:nth-child(2) {animation-delay: 2.5s; }
-.entreeresto:nth-child(3) {animation-delay: 1.0s; }
-.entreeresto:nth-child(4) {animation-delay: 1.5s; }
-.platresto:nth-child(5) {animation-delay: 2.0s; }
-.platresto:nth-child(6) {animation-delay: 2.5s; }
-.platresto:nth-child(7) {animation-delay: 3.0s; }
-.desserteresto:nth-child(8) {animation-delay: 3.5s; }
-.dessertresto:nth-child(9) {animation-delay: 2.0s; }
-.dessertresto:nth-child(10) {animation-delay: 4.5s; }
 
+
+.restaurant .entrees .entreeresto:nth-of-type(1) {
+    animation: apmenu 1s ease;
+}
+.restaurant .entrees .entreeresto:nth-of-type(2) {
+  animation: apmenu 5s ease;
+}
+.restaurant .entrees .entreeresto:nth-of-type(3) {
+  animation: apmenu 10s ease;
+}
+.restaurant .entrees .entreeresto:nth-of-type(4) {
+  animation: apmenu 15s ease;
+}
+.restaurant .plats .platresto:nth-of-type(1) {
+    animation: apmenu 1s ease;
+}
+.restaurant .plats .platresto:nth-of-type(2) {
+  animation: apmenu 5s ease;
+}
+.restaurant .plats .platresto:nth-of-type(3) {
+  animation: apmenu 10s ease;
+}
+.restaurant .desserts .dessertresto:nth-of-type(1) {
+  animation: apmenu 1s ease;
+}
+.restaurant .desserts .dessertresto:nth-of-type(2) {
+  animation: apmenu 5s ease;
+}
+.restaurant .desserts .dessertresto:nth-of-type(3) {
+  animation: apmenu 10ds ease;
+}
+@keyframes apmenu {
+0% {
+    opacity: 0;
+    transform: translateY(20rem);
+}
+40% {
+    opacity: 0.4;
+}
+70% {
+    opacity: 0.7;
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
 .entrees,
 .plats,
 .desserts {
@@ -347,9 +364,8 @@ h2 {
 	.restaurant {
 		flex-direction: row;
 		column-count: 3;
-		justify-content: center;
-		align-items: center;
-	}
+
+}
 	.container {
 		justify-content: center;
 	}
@@ -357,6 +373,8 @@ h2 {
 	.plats,
 	.desserts {
 		width: 100%;
+		height: 20vw;
+	}
 	}
 	.images {
 		height: 25vw;

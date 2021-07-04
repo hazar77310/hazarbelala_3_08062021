@@ -134,53 +134,6 @@ footer {
 	position: relative;
 }
 
-
-.restaurant .entrees .entreeresto:nth-of-type(1) {
-    animation: apmenu 1s ease;
-}
-.restaurant .entrees .entreeresto:nth-of-type(2) {
-  animation: apmenu 5s ease;
-}
-.restaurant .entrees .entreeresto:nth-of-type(3) {
-  animation: apmenu 10s ease;
-}
-.restaurant .entrees .entreeresto:nth-of-type(4) {
-  animation: apmenu 15s ease;
-}
-.restaurant .plats .platresto:nth-of-type(1) {
-    animation: apmenu 1s ease;
-}
-.restaurant .plats .platresto:nth-of-type(2) {
-  animation: apmenu 5s ease;
-}
-.restaurant .plats .platresto:nth-of-type(3) {
-  animation: apmenu 10s ease;
-}
-.restaurant .desserts .dessertresto:nth-of-type(1) {
-  animation: apmenu 1s ease;
-}
-.restaurant .desserts .dessertresto:nth-of-type(2) {
-  animation: apmenu 5s ease;
-}
-.restaurant .desserts .dessertresto:nth-of-type(3) {
-  animation: apmenu 10ds ease;
-}
-@keyframes apmenu {
-0% {
-    opacity: 0;
-    transform: translateY(20rem);
-}
-40% {
-    opacity: 0.4;
-}
-70% {
-    opacity: 0.7;
-}
-100% {
-    opacity: 1;
-    transform: translateY(0);
-}
-}
 .entrees,
 .plats,
 .desserts {
@@ -194,10 +147,10 @@ footer {
 	animation: deplacement 500ms both ease-in-out;
 }
 .platresto {
-	animation: deplacement 1800ms both ease-in-out;
+	animation: deplacement 1000ms both ease-in-out;
 }
 .dessertresto {
-	animation: deplacement 11000ms both ease-in-out;
+	animation: deplacement 1500ms both ease-in-out;
 }
 @keyframes deplacement {
 	0% {
@@ -209,6 +162,18 @@ footer {
     	transform: translateY(0);
 	}
 }
+.entreeresto:nth-of-type(1) {animation-delay: 0s; }
+.entreeresto:nth-of-type(2) {animation-delay: 5s; }
+.entreeresto:nth-of-type(3) {animation-delay: 10s; }
+.entreeresto:nth-of-type(4) {animation-delay: 15s; }
+.platresto:nth-of-type(1) {animation-delay: 20s; }
+.platresto:nth-of-type(2) {animation-delay: 25s; }
+.platresto:nth-of-type(3) {animation-delay: 30s; }
+.desserteresto:nth-of-type(1) {animation-delay: 35s; }
+.dessertresto:nth-of-type(2) {animation-delay: 40s; }
+.dessertresto:nth-of-type(3) {animation-delay: 45s; }
+
+
 p {
 	display: inline-block;
 }
@@ -362,8 +327,9 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
 	.restaurant {
-		flex-direction: row;
-		column-count: 3;
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
 
 }
 	.container {
@@ -373,7 +339,6 @@ h2 {
 	.plats,
 	.desserts {
 		width: 100%;
-		height: 20vw;
 	}
 	}
 	.images {
@@ -382,6 +347,13 @@ h2 {
 	.searchbutton {
 		justify-content: center;
 	}
+	.entreeresto,
+	.platresto,
+	.dessertresto {
+		width: 100%;
+		position: relative;
+}
+
 
 
 }

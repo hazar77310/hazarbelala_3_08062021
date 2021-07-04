@@ -135,13 +135,13 @@ footer {
 	position: relative;
 }
 .entreeresto {
-	animation: deplacement 700ms both ease-in-out;
+	animation: deplacement 500ms both ease-in-out;
 }
 .platresto {
-	animation: deplacement 700ms 400ms both ease-in-out;
+	animation: deplacement 1800ms both ease-in-out;
 }
 .dessertresto {
-	animation: deplacement 700ms 800ms both ease-in-out;
+	animation: deplacement 11000ms both ease-in-out;
 }
 @keyframes deplacement {
 	0% {
@@ -153,6 +153,16 @@ footer {
     	transform: translateY(0);
 	}
 }
+.entreeresto:nth-child(1) {animation-delay: 0.0s; }
+.entreeresto:nth-child(2) {animation-delay: 2.5s; }
+.entreeresto:nth-child(3) {animation-delay: 1.0s; }
+.entreeresto:nth-child(4) {animation-delay: 1.5s; }
+.platresto:nth-child(5) {animation-delay: 2.0s; }
+.platresto:nth-child(6) {animation-delay: 2.5s; }
+.platresto:nth-child(7) {animation-delay: 3.0s; }
+.desserteresto:nth-child(8) {animation-delay: 3.5s; }
+.dessertresto:nth-child(9) {animation-delay: 2.0s; }
+.dessertresto:nth-child(10) {animation-delay: 4.5s; }
 
 .entrees,
 .plats,
@@ -163,6 +173,25 @@ footer {
 	width: 100%;
 }
 
+.entreeresto {
+	animation: deplacement 500ms both ease-in-out;
+}
+.platresto {
+	animation: deplacement 1800ms both ease-in-out;
+}
+.dessertresto {
+	animation: deplacement 11000ms both ease-in-out;
+}
+@keyframes deplacement {
+	0% {
+    	opacity: 0;
+    	transform: translateY(10px);
+	}
+	100% {
+    	opacity: 1;
+    	transform: translateY(0);
+	}
+}
 p {
 	display: inline-block;
 }
@@ -209,8 +238,7 @@ h2 {
   flex: 1 1 90%;
   transition: flex 500ms linear;
 
-}
-.rotate {
+}.rotate {
 	display: flex;
 	position: relative;
 	justify-content: center;

@@ -131,6 +131,27 @@ footer {
 	position: relative;
 }
 
+.imgpalette {
+	background-image: url("../images/restaurants/lapalettedugout.jpg");
+}
+.imgdelice {
+	background-image: url("../images/restaurants/ledelicedessens.jpg");
+}
+.imgfrancaise {
+	background-image: url("../images/restaurants/alafrancaise.jpg");
+}
+.imglanote {
+	background-image: url("../images/restaurants/lanoteenchantee.jpg");
+}
+.imglanote,
+.imgdelice,
+.imgpalette,
+.imgfrancaise {
+		background-size: cover;
+		background-position: center center;
+		height: 50vw;
+		width: 100%;
+}
 .entrees,
 .plats,
 .desserts {
@@ -317,7 +338,14 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+	.imglanote,
+	.imgdelice,
+	.imgpalette,
+	.imgfrancaise {
+		height: 30vw;
 }
+}
+
 @media screen and (min-width: 1200px) {
 	.restaurant {
 		display: grid;
@@ -332,9 +360,6 @@ h2 {
 	.plats,
 	.desserts {
 		width: 100%;
-	}
-	.images {
-		height: 500px;
 	}
 	.searchbutton {
 		justify-content: center;

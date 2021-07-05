@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family= Shrikhand&display=swap');
 
 body {
 	max-width: 100%;
 	margin: 0;
 	overflow-x: hidden;
-	font-family : 'Roboto', sans-serif 
+	font-family : 'Roboto', sans-serif ;
 }
 
 a {
@@ -19,12 +19,14 @@ h4,p,h5 {
 h1 {
 	color: #353535;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	padding: 15px 30px 0 30px;
-	font-weight: bold;
+	font-weight: bolder;
 }
 .nosrestaurants p {
 	padding: 0 10px 0 10px;
+	font-weight: 300;
+	font-style: normal;
 }
 .loader {
   border-radius: 50%;
@@ -91,6 +93,7 @@ header {
 	padding: 20px 0 15px 0;
 }
 
+
 .search {
 	align-items : center ;
 	display : flex ;
@@ -110,16 +113,16 @@ header {
 	padding-bottom: 20px;
 }
 .searchbutton {
-	height: 45px;
 	border-radius: 20px;
 	font-size: 1.5em;
-	width: 220px;
 	color: white;
-	font-size: 1em;
+	font-size: 0.9em;
 	margin-bottom: 20px;
 	background: linear-gradient(#FF79DA, #9356DC);
 	margin-top: 20px;
 	border: none;
+	box-shadow: 3px 3px 10px #bfbfbf;
+	padding: 15px;
 }
 .search .fas {
 	margin-right: 10px;
@@ -127,18 +130,15 @@ header {
 .icontextfilters {
   font-weight: bold;
   margin-bottom: 1.5vmax;
-  border-top: solid #e0e0e0 2px;
-  border-right: solid #e0e0e0 2px;
-  border-bottom: solid #e0e0e0 2px;
-  border-left: none;
   background-color: #f2f2f2;
   padding: 20px;
-  border-radius: 60px;
+  border-radius: 20px;
   display: flex;
   position: relative;
   width: 250px;
   color: black;
   margin: 1em;
+  box-shadow: 0px 7px 10px -6px #f2f2f2;
 }
 
 .icontextfilters:hover {
@@ -166,16 +166,18 @@ header {
 	margin-right: 1em;
 }
 .category-head {
-  flex-direction: column;
   display: flex;
+  justify-content: center;
+  align-items: center;
+ 	flex-direction: column;
 }
 .filters {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
+	margin-bottom: 30px;
 }
 h2 {
-	font-weight: bolder;
+	margin-left: 30px;
 	margin-top: 50px;
 }
 footer {
@@ -304,6 +306,9 @@ h4 {
 }
 .textresto p {
 	padding: 5px 0 8px 8px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 0.9em;
 }
 
 .restopart {
@@ -318,6 +323,10 @@ h4 {
 .partenaire,
 .mentions {
 	margin-bottom: 10px;
+}
+h5 {
+	font-weight: 400;
+	font-style: normal;
 }
 .iconresto {
 	margin-right: 5px;
@@ -341,6 +350,9 @@ h4 {
 	.textresto {
 		padding-bottom: 10px;
 	}
+	h2 {
+		text-align: center;
+	}
 }
 @media screen and (min-width: 1200px) {
 	.restosection {
@@ -354,9 +366,6 @@ h4 {
 	.category-head {
 		justify-content: center;
 		flex-direction: row;
-	}
-	h2, #restaurants {
-		text-align: center;
 	}
 	
 }

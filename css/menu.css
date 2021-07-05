@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body {
@@ -21,6 +21,10 @@ h3,p {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	width: 250px;
+}
+h5 {
+	font-weight: 400;
+	font-style: normal;
 }
 
 a {
@@ -119,16 +123,15 @@ footer {
 .entreeresto,
 .platresto,
 .dessertresto {
-	border: 1px solid;
 	border-radius: 20px;
 	background-color: #ffffff;
-	border-color: #ffffff;
 	height: 70px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin: 10px 0 10px 0;
 	display: flex;
 	width: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .imgpalette {
@@ -197,6 +200,8 @@ p {
 }
 h2 {
 	font-size: 1em;
+	font-weight: 400;
+	font-style: normal;
 }
 .line {
 	width: 42px;
@@ -208,9 +213,11 @@ h2 {
 .price {
     flex: min-content;
     display: flex;
-    padding-top: 42px;
+    padding-top: 43px;
     font-family : 'Roboto', sans-serif ;
     transition: flex 500ms linear;
+    font-size: 0.8em;
+    font-weight: bold;
    	
  }
 .searchbutton {
@@ -224,6 +231,7 @@ h2 {
 	border: none;
 	display: flex;
 	justify-content: center;
+	box-shadow: 3px 3px 10px #bfbfbf;
 }
 .searchbutton:hover {
 	opacity: 0.9;
@@ -235,7 +243,7 @@ h2 {
 }
 .text {
 	margin: 0;
-  flex: 1 1 90%;
+  flex: 1 1 80%;
   transition: flex 500ms linear;
 
 }.rotate {
@@ -253,7 +261,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	color: transparent;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .entreeresto:hover .rotate {
@@ -262,21 +270,21 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 20%;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
-  margin-left: 10px;
   box-shadow: 3px 2px 2px 3px #99E2D0;
-
-
 }
 .entreeresto:hover .rotate i {
 	right: 0;
   color: white;
   transition: 1s ease-in-out;
  	transform: rotate(360deg);
-
+}
+.entreeresto:hover .price {
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
 }
 
 
@@ -286,11 +294,10 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 20%;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
-  margin-left: 10px;
   box-shadow: 3px 2px 2px 3px #99E2D0;
 
 
@@ -302,6 +309,10 @@ h2 {
  	transform: rotate(360deg);
 
 }
+.platresto:hover .price {
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
+}
 
 .dessertresto:hover .rotate {
 	right: -30px;
@@ -309,11 +320,10 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 20%;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
-  margin-left: 10px;
   box-shadow: 3px 2px 2px 3px #99E2D0;
 }
 .dessertresto:hover .rotate i {
@@ -323,11 +333,16 @@ h2 {
  	transform: rotate(360deg);
 
 }
+.dessertresto:hover .price {
+	transition: transform 1s ease-in-out;
+  transform: translateX(-2em);
+}
 .restaurant h3 {
 	 padding: 15px 0 0 20px;
 }
 .restaurant p {
 	padding: 5px 0 10px 20px;
+	font-size: 0.9em;
 }
 
 .proposer,

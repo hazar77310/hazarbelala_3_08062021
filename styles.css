@@ -170,7 +170,9 @@ header {
   display: flex;
 }
 .filters {
-	padding-left: 15px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
 }
 h2 {
 	font-weight: bolder;

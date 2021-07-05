@@ -126,7 +126,7 @@ footer {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	height: auto;
+	height: 70px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin: 10px 0 10px 0;
 	display: flex;
@@ -199,7 +199,7 @@ h2 {
 	height: 45px;
 	border-radius: 20px;
 	font-size: 1em;
-	width: 220px;
+	width: 170px;
 	color: white;
 	margin-bottom: 50px;
 	background: linear-gradient(#FF79DA, #9356DC);

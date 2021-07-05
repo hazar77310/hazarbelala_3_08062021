@@ -20,7 +20,7 @@ h3,p {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	max-width: 100%;
+	width: 250px;
 }
 
 a {
@@ -37,9 +37,6 @@ header {
 	display: flex;
 	justify-content: center;
 	padding: 20px 0 15px 0;
-}
-.images {
-	height: 75vw;
 }
 .fleche {
 	position: absolute;
@@ -71,7 +68,7 @@ footer {
 	margin-bottom: 10px;
 	flex-direction: column;
 	border: 1px solid #f6f6f6;
-	margin-top: -50px;
+	margin-top: -30px;
 	border-top-right-radius: 30px ;
 	border-top-left-radius: 30px ;
   position: relative;
@@ -320,10 +317,6 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-	.images {
-		height: 45vw;
-	}
-
 }
 @media screen and (min-width: 1200px) {
 	.restaurant {
@@ -340,9 +333,8 @@ h2 {
 	.desserts {
 		width: 100%;
 	}
-	}
 	.images {
-		height: 25vw;
+		height: 500px;
 	}
 	.searchbutton {
 		justify-content: center;

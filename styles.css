@@ -212,12 +212,17 @@ footer {
 	opacity: 0;
 	transition: opacity 400ms ease-in-out;
 }
-.heartresto .fas:hover  {
+.heartresto:hover  {
  	background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
    display: initial;
    opacity: 1;
+}
+.heartresto:hover .far  {
+   display: none;
+
+
 }
 .heartresto .fas,
 .heartresto .far {
@@ -299,7 +304,7 @@ footer {
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin-bottom: 20px;
 	height: 100%;
-	width: 50vw
+	width: 50vw;
 	display: flex;
 }
 
@@ -352,6 +357,7 @@ h5 {
 	}
 	.boxresto {
 		height: auto;
+		width: 40vw;
 	}
 	.textresto {
 		padding-bottom: 10px;
@@ -363,7 +369,11 @@ h5 {
 @media screen and (min-width: 1200px) {
 	.restosection {
     grid-gap: 2%;
-    justify-content: center;
+    align-items: center;
+	}
+	.container {
+		display: flex;
+		align-items: center;
 	}
 	.restosection {
 		margin-bottom: 50px;

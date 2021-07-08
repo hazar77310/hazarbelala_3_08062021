@@ -291,6 +291,12 @@ h2 {
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
 }
+.entreeresto .price {
+	transition: 1s ease-in-out ;
+}
+.entreeresto .rotate {
+	transition: 1s ease-in-out ;
+}
 
 
 .platresto:hover .rotate {
@@ -318,6 +324,12 @@ h2 {
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
 }
+.platresto .price {
+	transition: 1s ease-in-out ;
+}
+.platresto .rotate {
+	transition: 1s ease-in-out ;
+}
 
 .dessertresto:hover .rotate {
 	right: -30px;
@@ -341,6 +353,12 @@ h2 {
 .dessertresto:hover .price {
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
+}
+.dessertresto .price {
+	transition: 1s ease-in-out ;
+}
+.dessertresto .rotate {
+	transition: 1s ease-in-out ;
 }
 .restaurant h3 {
 	 padding: 15px 0 0 10px;

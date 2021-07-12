@@ -221,7 +221,7 @@ h2 {
     padding-top: 39px;
     font-family : 'Roboto', sans-serif ;
     transition: flex 500ms linear;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
    	
  }
@@ -275,7 +275,7 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 70px;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
@@ -305,7 +305,7 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 70px;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
@@ -337,7 +337,7 @@ h2 {
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	width: 50px;
+	width: 70px;
 	height: 100%;
 	transition: transform 1s ease-in-out;
   transform: translateX(-2em);
@@ -362,11 +362,11 @@ h2 {
 }
 .restaurant h3 {
 	 padding: 15px 0 0 10px;
-	 font-size: 1em;
+	 font-size: 1.1em;
 }
 .restaurant p {
 	padding: 5px 0 10px 10px;
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 .entreeresto:hover p,
 .entreeresto:hover h3,

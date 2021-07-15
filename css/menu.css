@@ -244,6 +244,7 @@ h2 {
 .commande {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .container a {
 	width: 100%;
